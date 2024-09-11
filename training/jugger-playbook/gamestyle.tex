@@ -1,0 +1,31 @@
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[tikz]{bclogo}
+\usepackage{lipsum}
+\usepackage[ngerman]{babel}
+
+\setlength\parindent{0pt}
+
+\newcommand{\newgame}[3]{
+\addcontentsline{toc}{subsubsection}{#1}
+
+  \null
+  \vskip 2em%
+  \begin{center}%
+  \rule{\textwidth}{1pt}\\
+
+   {\huge #1 \par}
+   
+    \rule{\textwidth}{1pt}\\
+    \vskip 1.5em
+    \begin{tabular}{rl}
+    {\large \textbf{Dauer {#2}}}\hspace{1cm} & \hspace{1cm}{\large\textbf{{#3} Spielende}}\\
+    \end{tabular}
+\end{center}
+  \par
+  \vskip 1.5em
+}
+
+
+
+\renewcommand{\familydefault}{\sfdefault}
